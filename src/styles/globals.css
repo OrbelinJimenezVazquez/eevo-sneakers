@@ -1,0 +1,47 @@
+/* Estilos Generales */
+* {
+  margin: 0; /* Elimina el margen por defecto */
+  padding: 0; /* Elimina el padding por defecto */
+  box-sizing: border-box; /* Asegura que el tamaño de los elementos se calcule correctamente */
+}
+
+/* Configuración del HTML */
+html {
+  scroll-behavior: smooth; /* Desplazamiento suave */
+  font-size: 100%; /* Asegura un tamaño de fuente base */
+  margin: 0;
+  padding: 0;
+  
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: #FFF8DC(0, 0, 0, 0);
+}
+
+/* Estilos para encabezados */
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0;
+  font-weight: normal;
+  position: relative;
+  padding: 0 0 10px 0;
+  line-height: normal;
+  color: #fff8dc;
+  margin: 0;
+}
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+p {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+}
+  
