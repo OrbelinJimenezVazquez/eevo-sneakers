@@ -1,18 +1,18 @@
-import '/src/pages/Nav-foot.css'; 
+import '/src/styles/Nav-foot.css'; 
 
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div class="gp1">
-        <div class="box">
+        <div class="box_image">
           <figure>
             <a href="#">
               <img src="src/assets/images/logo1-2.png" alt="Logo de Eevo SNEAKERS" />
             </a>
           </figure>
         </div>
-        <div class="box">
+        <div class="box_about">
           <h2>Sobre nosotros</h2>
           <p>
             Somos alumnos de la Universidad del Caribe realizando una práctica
@@ -30,7 +30,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div class="box">
+        <div class="box_follow">
           <h2>Siguenos</h2>
           <div class="social-icons">
             <a href="#"><i className="fa-brands fa-instagram"></i></a>
@@ -41,10 +41,10 @@ export default function Footer() {
         </div>
       </div>
       <div class="gp2">
-        <small
-          >&copy; 2024 <b>EEVO SNEAKERS</b> - Todos los derechos reservados.
-          Esta pagina fue realiza por <b>Orbelin Jimenez Vazquez</b></small
-        >
+        <small> 
+          &copy; 2025 <b>EEVO SNEAKERS</b> <br></br>- Todos los derechos reservados.
+          Esta pagina fue realiza por <b>Orbelin Jimenez Vazquez</b> -
+        </small>
       </div>
     </footer>
   );

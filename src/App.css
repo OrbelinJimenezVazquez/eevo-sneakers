@@ -1,42 +1,100 @@
-#root {
-  max-width: 1280px;
+
+/* Estilos Generales */
+:root {
+  /* Colores base */
+  --white: #FFFFFF;
+  --black: #151515;
+  
+  /* Azules (jerarquía) */
+  --navy-dark: #0E2439;    /* Navbar/fondos importantes */
+  --navy-medium: #121F2B;  /* Footer */
+  --navy-light: #1A3A5A;   /* Hovers azules */
+  
+  /* Amarillos (acción) */
+  --gold-primary: #F8D347; /* Botones principales */
+  --gold-hover: #FFDF60;   /* Hovers */
+  --gold-light: #FFF5D1;   /* Fondos destacados */
+  
+  /* Grises */
+  --gray-light: #E8E8E8;   /* Fondos secciones */
+  --gray-medium: #D1D1D1;  /* Bordes */
+  --gray-dark: #7A7A7A;    /* Texto secundario */
+}
+
+* {
+  margin: 0; /* Elimina el margen por defecto */
+  padding: 0; /* Elimina el padding por defecto */
+  box-sizing: border-box; /* Asegura que el tamaño de los elementos se calcule correctamente */
+}
+
+/* Configuración del HTML */
+html {
+  scroll-behavior: smooth; /* Desplazamiento suave */
+  font-size: 100%; /* Asegura un tamaño de fuente base */
+  margin: 0;
+  padding: 0;
+  
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: #FFF8DC(0, 0, 0, 0);
+}
+h2 { color: var(--navy-light); }
+p  { color: var(--black); }
+.text-secondary { color: var(--gray-dark); }
+/* Estilos para encabezados */
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0;
+  font-weight: normal;
+  position: relative;
+  padding: 0 0 10px 0;
+  line-height: normal;
+  color: #fff8dc;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-emphasis: none;
+  text-decoration: none;
+  text-decoration-line: none;
+}
+p {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+/* Estructura principal */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Responsive */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 15px;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
