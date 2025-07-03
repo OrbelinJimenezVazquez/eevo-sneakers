@@ -1,7 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* Estilos para el Hero */
 .hero-section {
   position: relative;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,25 +20,45 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1;
+  
 }
-
+.hero-video::after  {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  object-fit: cover;
+  z-index: 10;
+}
 .hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   position: relative;
   z-index: 2;
   max-width: 800px;
-  padding: 0 2rem;
 }
 
 .hero-content h1 {
-  font-size: 4rem;
+  font-size: 88px;
   margin-bottom: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Alfa Slab One", serif;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
+  width: 120%;
 }
 
 .hero-subtitle {
+  color:#ffff;
   font-size: 1.5rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
   margin-bottom: 2rem;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
@@ -43,11 +66,13 @@
 .hero-cta {
   background-color: var(--gold-primary);
   color: var(--navy-dark);
-  padding: 1rem 2rem;
+  padding: 1rem;
+  width: 30%;
   border-radius: 30px;
   font-weight: bold;
   text-decoration: none;
   display: inline-block;
+  justify-content: center;
   transition: all 0.3s ease;
   font-size: 1.1rem;
 }
@@ -59,7 +84,7 @@
 }
 
 /* Estilos para las secciones */
-.section {
+.new-arrivals {
   padding: 4rem 2rem;
   max-width: 1200px;
   margin: 0 auto;

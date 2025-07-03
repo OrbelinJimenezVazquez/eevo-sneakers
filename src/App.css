@@ -38,9 +38,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: #FFF8DC(0, 0, 0, 0);
 }
-h2 { color: var(--navy-light); }
-p  { color: var(--black); }
-.text-secondary { color: var(--gray-dark); }
+
 /* Estilos para encabezados */
 h3,
 h4,
@@ -88,8 +86,12 @@ body {
   width: 100%;
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   color: inherit;
+}
+ul{
+  list-style: none; /* Elimina los puntos de las listas */
+
 }
 
 /* Responsive */
