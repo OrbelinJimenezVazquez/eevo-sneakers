@@ -1,14 +1,28 @@
+// components/ProductCard.jsx
+import React from 'react';
 import { Link } from 'react-router-dom';
-import '/src/styles/Main.css';
+import '/src/styles/ProductCard.css';
 
-export default function ProductCard({ id, name, price, image }) {
+const ProductCard = ({ id, name, price, image, category }) => {
   return (
-    <Link to={`/product/${id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-      <div className="card">
-        <img src={image} alt={name} />
-        <h3>{name}</h3>
-        <p>${price}</p>
-      </div>
-    </Link>
+    <div className="product-card">
+      <Link to={`/product/${id}`} className="product-link">
+        <div className="product-image-container">
+          <img 
+            src={image} 
+            alt={name} 
+            className="product-image"
+            loading="lazy"
+          />
+          <span className="product-category">{category}</span>
+        </div>
+        <div className="product-info">
+          <h3 className="product-name">{name}</h3>
+          <p className="product-price">${price.toFixed(2)}</p>
+        </div>
+      </Link>
+    </div>
   );
-}
+};
+
+export default ProductCard;

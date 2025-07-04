@@ -1,0 +1,51 @@
+/* InstagramFeed.css */
+.instagram-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.instagram-subtitle {
+  color: var(--navy-medium);
+  font-weight: 600;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.instagram-feed {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.instagram-placeholder {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  grid-column: 1 / -1;
+}
+
+.instagram-button {
+  display: inline-block;
+  background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.instagram-button:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .instagram-section {
+    padding: 3rem 1rem;
+  }
+}

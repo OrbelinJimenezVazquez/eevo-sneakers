@@ -1,62 +1,44 @@
 [
   {
     "id": 1,
-    "name": "Nike Air Force 1",
+    "name": "Nike Air Force 1 Mid",
     "price": 2100,
-    "image": "https://via.placeholder.com/200"
+    "image": "src/assets/images/Tenis/custom-nike-air-force-1-mid.png"
   },
   {
     "id": 2,
     "name": "Adidas Forum Low",
     "price": 1900,
-    "image": "https://via.placeholder.com/200"
+    "image": "src/assets/images/Tenis/adidas forum low.avif"
   },
   {
     "id": 3,
-    "name": "Puma RS-X",
+    "name": "Air Jordan 1 Mid",
     "price": 1800,
-    "image": "https://via.placeholder.com/200"
+    "image": "src/assets/images/Tenis/air-jordan-1-mid.png"
   },
   {
     "id": 4,
     "name": "Reebok Classic",
     "price": 1700,
-    "image": "https://via.placeholder.com/200"
+    "image": "src/assets/images/Tenis/reebok classic n.jpeg"
   },
   {
     "id": 5,
     "name": "New Balance 574",
     "price": 1600,
-    "image": "https://via.placeholder.com/200"
+    "image": "src/assets/images/Tenis/New_balance_574.webp"
   },
   {
     "id": 6,
     "name": "Converse Chuck Taylor",
     "price": 1500,
-    "image": "https://via.placeholder.com/200"
+    "image": "src/assets/images/Tenis/converse_chuck_taylor_White.webp"
   },
   {
     "id": 7,
     "name": "Vans Old Skool",
     "price": 1400,
-    "image": "https://via.placeholder.com/200"
-  },
-  {
-    "id": 8,
-    "name": "Asics Gel-Lyte III",
-    "price": 1300,
-    "image": "https://via.placeholder.com/200"
-  },
-  {
-    "id": 9,
-    "name": "Under Armour HOVR",
-    "price": 1200,
-    "image": "https://via.placeholder.com/200"
-  },
-  {
-    "id": 10,
-    "name": "Saucony Jazz Original",
-    "price": 1100,
-    "image": "https://via.placeholder.com/200"
+    "image": "src/assets/images/Tenis/Vans Old Skool.webp"
   }
 ]

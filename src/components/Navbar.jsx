@@ -1,9 +1,28 @@
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import '/src/styles/Nav-foot.css';
 
 export default function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const show = window.scrollY > 50; // Cambia a opaco después de 50px de scroll
+      setIsScrolled(show);
+    };
+
+    // Agrega el listener al montar el componente
+    document.addEventListener('scroll', handleScroll);
+    
+    // Limpia el listener al desmontar
+    return () => {
+      document.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="navbar">
+    
+    <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="logo">
         <Link to="/">
           <h1>Eevo Sneakers</h1>

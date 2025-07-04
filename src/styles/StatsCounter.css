@@ -1,0 +1,49 @@
+/* StatsCounter.css */
+.stats-section {
+  padding: 3rem 1rem;
+  background-color: var(--navy-dark);
+  color: white;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.stat-item {
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--gold-primary);
+  font-family: 'Alfa Slab One', serif;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .stat-label {
+    font-size: 1rem;
+  }
+  
+  .stats-container {
+    gap: 1.5rem;
+  }
+}

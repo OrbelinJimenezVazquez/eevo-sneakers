@@ -6,9 +6,10 @@
   --black: #151515;
   
   /* Azules (jerarquía) */
-  --navy-dark: #0E2439;    /* Navbar/fondos importantes */
+  --navy-dark: #0E2439;    /* fondos importantes */
   --navy-medium: #121F2B;  /* Footer */
   --navy-light: #1A3A5A;   /* Hovers azules */
+  --navy-nav:#183661;
   
   /* Amarillos (acción) */
   --gold-primary: #F8D347; /* Botones principales */
@@ -49,7 +50,6 @@ h6 {
   position: relative;
   padding: 0 0 10px 0;
   line-height: normal;
-  color: #fff8dc;
   margin: 0;
   font-family: 'Poppins', sans-serif;
 }
@@ -77,12 +77,8 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
-
 .main-content {
   flex: 1;
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
   width: 100%;
 }
 a {
@@ -93,7 +89,11 @@ ul{
   list-style: none; /* Elimina los puntos de las listas */
 
 }
-
+img{
+  -webkit-user-drag: none; /* Evita el arrastre en navegadores WebKit */
+  -moz-user-drag: none; /* Evita el arrastre en navegadores Mozilla */
+  user-select: none; /* Evita la selección de imágenes */
+}
 /* Responsive */
 @media (max-width: 768px) {
   .main-content {

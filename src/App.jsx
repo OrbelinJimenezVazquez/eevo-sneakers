@@ -6,7 +6,6 @@ import LoadingSpinner from './components/LoadingSpinner';
 import ScrollToTop from './components/ScrollToTop';
 import { CartProvider } from './context/CartContext';
 import './App.css';
-import HeroSection from './components/HeroSection';
 
 // Lazy loading para páginas (mejora performance)
 const Home = lazy(() => import('./pages/Home'));
@@ -23,7 +22,6 @@ export default function App() {
         <ScrollToTop />
         <div className="app">
           <Navbar />
-          <HeroSection />
           <main className="main-content">
             <Suspense fallback={<LoadingSpinner />}>
               <Routes>

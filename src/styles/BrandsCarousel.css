@@ -1,0 +1,103 @@
+.brands-section {
+  display: flex;
+  padding: 3rem 0;
+  background-color: linear-gradient(to bottom,#f8f8f8, #000000);
+  overflow: hidden;
+  position: relative;
+}
+
+.brands-container {
+  display: flex;
+  width: 100%;
+}
+
+.brands-marquee {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+  animation: scroll 20s linear infinite;
+  will-change: transform;
+  flex-shrink: 0;
+  min-width: 100%;
+}
+
+.brand-item {
+  flex: 0 0 auto;
+}
+
+.brand-logo {
+  height: 70px;
+  width: auto;
+  max-width: 120px;
+  object-fit: contain;
+  aspect-ratio: 1/1;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.brand-logo:hover {
+  filter: grayscale(0);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Efecto de desvanecimiento en los bordes */
+.brands-section::before,
+.brands-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.brands-section::before {
+  left: 0;
+  background: linear-gradient(to right, #f8f8f8, rgba(248, 248, 248, 0));
+}
+
+.brands-section::after {
+  right: 0;
+  background: linear-gradient(to left, #f8f8f8, rgba(248, 248, 248, 0));
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Mueve solo el 50% para el efecto infinito */
+  }
+}
+
+/* Versión móvil con scroll horizontal */
+@media (max-width: 768px) {
+  .brands-section {
+    padding: 2rem 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .brands-container {
+    width: max-content;
+    padding: 0 2rem;
+  }
+  
+  .brands-marquee {
+    animation: none;
+    gap: 2rem;
+  }
+  
+  .brand-logo {
+    height: 40px;
+    opacity: 0.9;
+  }
+  
+  .brands-section::before,
+  .brands-section::after {
+    display: none;
+  }
+}

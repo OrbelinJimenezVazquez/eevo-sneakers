@@ -19,6 +19,7 @@ const HeroSection = () => {
         Tu navegador no soporta videos HTML5.
       </video>
     </section>
+    
   );
 };
 
