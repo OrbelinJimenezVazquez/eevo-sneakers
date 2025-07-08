@@ -1,19 +1,20 @@
 import React from 'react';
 import { lazy, Suspense } from 'react';
-import ProductCard from '../components/ProductCard';  
-import products from '../data/products.json';
-import LoadingSpinner from '../components/LoadingSpinner';
-import '/src/styles/Home.css';
+import ProductCard from '../components/products/ProductCard';  
+import products from '../data/products/products.json';
+import LoadingSpinner from '../components/ui/LoadingSpinner';
+import '/src/styles/pages/Home.css';
 import '/src/App.css';
-import HeroSection from '../components/HeroSection';
+import HeroSection from '../components/sections/HeroSection';
+import SectionWrapper from '../components/ui/SectionWrapper';
 
 // Componentes lazy-loaded para mejor performance
-const BrandsCarousel = lazy(() => import('../components/BrandsCarousel'));
-const SpecialOffer = lazy(() => import('../components/SpecialOffer'));
-const Testimonials = lazy(() => import('../components/Testimonials'));
-const StatsCounter = lazy(() => import('../components/StatsCounter'));
-const Newsletter = lazy(() => import('../components/Newsletter'));
-const InstagramFeed = lazy(() => import('../components/InstagramFeed'))
+const BrandsCarousel = lazy(() => import('../components/products/BrandsCarousel'));
+const SpecialOffer = lazy(() => import('../components/sections/SpecialOffer'));
+const Testimonials = lazy(() => import('../components/sections/Testimonials'));
+const StatsCounter = lazy(() => import('../components/sections/StatsCounter'));
+const Newsletter = lazy(() => import('../components/sections/Newsletter'));
+const InstagramFeed = lazy(() => import('../components/sections/InstagramFeed'))
 
 export default function Home() {
   const featuredProducts = products.filter(prod => prod.featured);
@@ -50,6 +51,11 @@ export default function Home() {
         <InstagramFeed/>
         <Newsletter />
       </Suspense>
+    <SectionWrapper>
+      <h1>Contenido de la sección</h1>
+      <p>Este contenido estará envuelto en un contenedor consistente.</p>
+    </SectionWrapper>
     </div>
+    
   );
 }

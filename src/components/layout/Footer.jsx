@@ -1,4 +1,4 @@
-import '/src/styles/Nav-foot.css'; 
+import '/src/styles/components/layout/Nav-foot.css'; 
 
 
 export default function Footer() {

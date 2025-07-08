@@ -1,6 +1,6 @@
 // Componente StatsCounter.jsx
 import React, { useState, useEffect } from 'react';
-import '/src/styles/StatsCounter.css';
+import '/src/styles/sections/StatsCounter.css';
 
 const StatsCounter = () => {
   const [clients, setClients] = useState(0);

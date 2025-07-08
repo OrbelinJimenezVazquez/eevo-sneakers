@@ -1,0 +1,19 @@
+/* Estilos base (puedes personalizar según tu tema) */
+section {
+  transition: all 0.3s ease;
+}
+
+/* Opcional: Variantes de fondo */
+.bg-primary {
+  background-color: var(--navy-dark);
+  color: white;
+}
+
+.bg-secondary {
+  background-color: var(--gold-primary);
+  color: var(--navy-dark);
+}
+
+.bg-light {
+  background-color: var(--gray-light);
+}

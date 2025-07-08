@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '/src/styles/Home.css'; // Asegúrate de tener los estilos
+import '/src/styles/pages/Home.css'; // Asegúrate de tener los estilos
 
 const HeroSection = () => {
   return (

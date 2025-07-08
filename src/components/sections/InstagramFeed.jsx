@@ -1,6 +1,6 @@
 // Componente InstagramFeed.jsx
 import React from 'react';
-import '/src/styles/InstagramFeed.css';
+import '/src/styles/sections/InstagramFeed.css';
 
 const InstagramFeed = () => {
   return (

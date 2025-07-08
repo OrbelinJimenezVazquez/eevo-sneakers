@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '/src/styles/ProductCard.css';
+import '/src/styles/products/ProductCard.css';
 
 const ProductCard = ({ id, name, price, image, category, colors = ['Negro', 'Blanco', 'Rojo'], sizes = ['38', '39', '40', '41', '42'] }) => {
   const [selectedColor, setSelectedColor] = useState(colors[0]);

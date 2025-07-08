@@ -1,15 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import LoadingSpinner from './components/LoadingSpinner';
-import ScrollToTop from './components/ScrollToTop';
+import Navbar from './components/layout/Navbar';
+import Footer from './components/layout/Footer';
+import LoadingSpinner from './components/ui/LoadingSpinner';
+import ScrollToTop from './components/ui/ScrollToTop';
 import { CartProvider } from './context/CartContext';
 import './App.css';
 
 // Lazy loading para páginas (mejora performance)
 const Home = lazy(() => import('./pages/Home'));
-const Catalog = lazy(() => import('./pages/Catalog'));
+const Catalog = lazy(() => import('./pages/products/Catalog'));
 const ProductDetail = lazy(() => import('./pages/ProductDetail'));
 const Cart = lazy(() => import('./pages/Cart'));
 const NotFound = lazy(() => import('./pages/NotFound'));

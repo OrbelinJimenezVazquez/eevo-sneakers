@@ -1,6 +1,6 @@
 // Componente Newsletter.jsx
 import React, { useState } from 'react';
-import '/src/styles/Newsletter.css';
+import '/src/styles/sections/Newsletter.css';
 
 const Newsletter = () => {
   const [email, setEmail] = useState('');

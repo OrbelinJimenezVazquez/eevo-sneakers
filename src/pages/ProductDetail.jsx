@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
-import products from '../data/products.json';
+import products from '../data/products/products.json';
 import { useCart } from '../context/CartContext';
-import '/src/styles/ProductCard.css';
+import '/src/styles/products/ProductCard.css';
 
 export default function ProductDetail() {
   const { id } = useParams();

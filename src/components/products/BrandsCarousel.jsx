@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import '/src/styles/BrandsCarousel.css';
+import '/src/styles/products/BrandsCarousel.css';
 
 const brands = [
   { id: 1, name: 'Nike', logo: 'src/assets/images/brands/nike.png' },
