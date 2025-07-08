@@ -17,7 +17,7 @@ const Newsletter = lazy(() => import('../components/sections/Newsletter'));
 const InstagramFeed = lazy(() => import('../components/sections/InstagramFeed'))
 
 export default function Home() {
-  const featuredProducts = products.filter(prod => prod.featured);
+  const featuredProducts = products.filter(prod => prod.feature);
   const newArrivals = products.slice(0, 6);
 
   return (

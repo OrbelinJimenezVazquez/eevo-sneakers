@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import '/src/styles/components/layout/Nav-foot.css';
 
 export default function Navbar() {
@@ -7,8 +7,12 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState(null);
   const [isHoveringNav, setIsHoveringNav] = useState(false);
-  const hoverTimer = useRef(null);
   const megaMenuRef = useRef(null);
+  const hoverTimer = useRef(null);
+  
+  // Obtener la ubicación actual
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
   
   // Efecto para el scroll
   useEffect(() => {
@@ -17,21 +21,25 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-    // Manejo optimizado del hover
-  const handleNavEnter = useCallback(() => {
+  // Función para obtener las clases del navbar
+  const getNavbarClasses = () => {
+    const classes = ['navbar'];
+    if (isScrolled) classes.push('scrolled');
+    if (!isHomePage) classes.push('solid');
+    if (isHoveringNav) classes.push('hovered');
+    return classes.join(' ');
+  };
+
+  // Handlers para hover
+  const handleNavEnter = () => {
     setIsHoveringNav(true);
     if (hoverTimer.current) clearTimeout(hoverTimer.current);
-  }, []);
+  };
 
-    const handleNavLeave = useCallback(() => {
+  const handleNavLeave = () => {
     hoverTimer.current = setTimeout(() => {
       setIsHoveringNav(false);
-    }, 300); // Pequeño retraso para evitar parpadeos
-  }, []);
-    const getNavbarClass = () => {
-    if (isScrolled) return 'scrolled'; // Si hay scroll, siempre color sólido
-    if (isHoveringNav || activeMenu) return 'hovered'; // Si hay hover o menú activo
-    return ''; // Transparente por defecto (sin scroll y sin hover)
+    }, 200);
   };
 
   const toggleMenu = () => {
@@ -222,8 +230,11 @@ const menus = {
         </div>
       </div>
       {/* Barra de navegación principal */}
-      <nav className={`navbar ${isScrolled ? 'scrolled' : ''}, ${getNavbarClass()}` }onMouseEnter={handleNavEnter}
-      onMouseLeave={handleNavLeave}>
+      <nav 
+        className={getNavbarClasses()}
+        onMouseEnter={handleNavEnter}
+        onMouseLeave={handleNavLeave}
+      >
         <div className="logo">
           <Link to="/" onClick={closeAllMenus}>
             <h1>Eevo Sneakers</h1>

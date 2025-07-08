@@ -74,6 +74,11 @@ body {
 .navbar.hovered {
   background-color: var(--navy-dark);
 }
+.navbar.solid {
+  background-color: var(--navy-dark);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  top:0;
+}
 .navbar .logo h1 {
   color: #f5f5f5;
   font-size: 1.4rem;

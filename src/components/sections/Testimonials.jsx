@@ -8,7 +8,7 @@ const testimonials = [
     role: 'Coleccionista',
     text: 'La mejor selección de sneakers que he encontrado. Envío rápido y autenticidad garantizada.',
     rating: 5,
-    avatar: '/images/avatars/avatar1.jpg'
+    avatar: 'src/assets/images/carlos.jpeg'
   },
   // Agrega más testimonios...
 ];

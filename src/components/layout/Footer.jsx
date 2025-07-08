@@ -8,7 +8,7 @@ export default function Footer() {
         <div class="box_image">
           <figure>
             <a href="#">
-              <img src="src/assets/images/Logos/logo1-2.png" alt="Logo de Eevo SNEAKERS" />
+              <img src="/src/assets/images/Logos/logo1-2.png" alt="Logo de Eevo SNEAKERS" />
             </a>
           </figure>
         </div>
