@@ -1,6 +1,6 @@
 import products from '../../data/products/products.json';
+import ProductCard from '../../components/products/ProductCard';
 
-import ProductCard from '../components/products/ProductCard';
 
 export default function Catalog() {
   return (
