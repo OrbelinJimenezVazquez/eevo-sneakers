@@ -35,6 +35,7 @@ export default function Home() {
       <ErrorBoundary FallbackComponent={ErrorFallback}>
         <Suspense fallback={<LoadingSpinner />}>
           <BrandsCarousel />
+          <StatsCounter/>
         </Suspense>
       </ErrorBoundary>
 
