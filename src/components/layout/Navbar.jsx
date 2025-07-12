@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import '/src/styles/components/layout/Nav-foot.css';
+import { useCart } from '../../context/CartContext';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -9,11 +10,13 @@ export default function Navbar() {
   const [isHoveringNav, setIsHoveringNav] = useState(false);
   const megaMenuRef = useRef(null);
   const hoverTimer = useRef(null);
+  const navigate = useNavigate();
   
   // Obtener la ubicación actual
   const location = useLocation();
-  const isHomePage = location.pathname === '/';
-  
+  const isHomePage = location.pathname === '/'; 
+  const { totalItems } = useCart(); 
+    
   // Efecto para el scroll
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
@@ -29,7 +32,15 @@ export default function Navbar() {
     if (isHoveringNav) classes.push('hovered');
     return classes.join(' ');
   };
+const [searchTerm, setSearchTerm] = useState('');
 
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (searchTerm.trim()) {
+      // Navegar a página de resultados o filtrar
+      navigate(`/catalog?search=${encodeURIComponent(searchTerm)}`);
+    }
+  };
   // Handlers para hover
   const handleNavEnter = () => {
     setIsHoveringNav(true);
@@ -290,17 +301,19 @@ const menus = {
           <li className="cart-icon">
             <Link to="/cart" onClick={closeAllMenus}>
               <i className="fas fa-shopping-cart"></i>
-              <span className="cart-count">0</span>
+              <span className="cart-count">{totalItems}</span>
             </Link>
           </li>
           
           <li className="search-container">
             <input 
               type="text" 
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
               placeholder="Buscar sneakers..." 
               aria-label="Buscar productos"
             />
-            <button type="submit">
+            <button type="submit" onClick={handleSearch}>
               <i className="fas fa-search"></i>
             </button>
           </li>

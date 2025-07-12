@@ -1,53 +1,616 @@
 [
   {
     "id": 1,
-    "name": "Nike Air Force 1 Mid",
+    "name": "Nike Air Jordan 1 Low",
     "price": 2100,
-    "image": "src/assets/images/Tenis/custom-nike-air-force-1-mid.png"
+    "category": "Nuevo",
+    "image": "src/assets/images/Tenis/air-jordan-1-low.png",
+    "images": [
+      "src/assets/images/Tenis/air-jordan-1-low.png",
+      "src/assets/images/Tenis/air-jordan-1-low.png",
+      "src/assets/images/Tenis/air-jordan-1-low.png",
+      "src/assets/images/Tenis/air-jordan-1-low.png"
+    ],
+    "colors": [
+      {
+        "name": "Azul/Blanco",
+        "image": "src/assets/images/Tenis/air-jordan-1-low.png",
+        "code": "100"
+      },
+      {
+        "name": "Rojo/Blanco",
+        "image": "src/assets/images/Tenis/air-jordan-1-low-red.png",
+        "code": "600"
+      }
+    ],
+    "sizes": [
+      { "size": "CM 24 (US 6)", "available": true },
+      { "size": "CM 25", "available": true },
+      { "size": "CM 25.5", "available": true },
+      { "size": "CM 26", "available": true },
+      { "size": "CM 26.5", "available": true },
+      { "size": "CM 27", "available": false },
+      { "size": "CM 27.5", "available": true },
+      { "size": "CM 28", "available": true },
+      { "size": "CM 28.5", "available": true },
+      { "size": "CM 29", "available": false }
+    ],
+    "description": "El Nike Air Force 1 Mid es un clásico atemporal que combina estilo y funcionalidad. Con su diseño icónico de corte medio, ofrece soporte adicional al tobillo manteniendo la comodidad legendaria de la línea Air Force 1.",
+    "details": {
+      "sustainable": true,
+      "sustainableDescription": null,
+      "style": "DD8959-100",
+      "origin": "Vietnam",
+      "colorShown": "Blanco/Azul"
+    },
+    "features": [
+      "Diseño icónico de corte medio",
+      "Construcción duradera con cuero premium",
+      "Amortiguación Air-Sole para comodidad",
+      "Soporte adicional al tobillo",
+      "Suela de goma con tracción superior",
+      "Plantilla acolchada removible"
+    ],
+    "specifications": {
+      "material": "Cuero y materiales sintéticos",
+      "sole": "Goma con Air-Sole",
+      "weight": "Aproximadamente 420g (talla 9 US)",
+      "technology": "Air-Sole"
+    },
+    "care": [
+      "Limpiar con un paño húmedo",
+      "Usar productos específicos para cuero",
+      "Secar al aire libre",
+      "Evitar la exposición directa al sol",
+      "Guardar en lugar seco"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "freeShippingThreshold": 50,
+      "returnPeriod": 60,
+      "estimatedDelivery": "2-5 días laborables"
+    },
+    "reviews": {
+      "count": 156,
+      "average": 4.6,
+      "breakdown": {
+        "5": 98,
+        "4": 35,
+        "3": 18,
+        "2": 3,
+        "1": 2
+      }
+    }
   },
   {
     "id": 2,
     "name": "Adidas Forum Low",
     "price": 1900,
-    "feature":5,
-    "image": "src/assets/images/Tenis/adidas-forum-low.avif"
+    "feature": 5,
+    "category": "Nuevo",
+    "image": "src/assets/images/Tenis/adidas-forum-low.avif",
+    "images": [
+      "src/assets/images/Tenis/adidas-forum-low.avif",
+      "src/assets/images/Tenis/adidas-forum-low.avif",
+      "src/assets/images/Tenis/adidas-forum-low.avif",
+      "src/assets/images/Tenis/adidas-forum-low.avif"
+    ],
+    "colors": [
+      {
+        "name": "Blanco/Verde",
+        "image": "src/assets/images/Tenis/adidas-forum-low.avif",
+        "code": "100"
+      },
+      {
+        "name": "Negro/Blanco",
+        "image": "src/assets/images/Tenis/adidas-forum-low.avif",
+        "code": "001"
+      },
+      {
+        "name": "Azul/Blanco",
+        "image": "src/assets/images/Tenis/adidas-forum-low.avif",
+        "code": "400"
+      }
+    ],
+    "sizes": [
+      { "size": "CM 24.5", "available": false },
+      { "size": "CM 25", "available": true },
+      { "size": "CM 25.5", "available": true },
+      { "size": "CM 26", "available": true },
+      { "size": "CM 26.5", "available": true },
+      { "size": "CM 27", "available": true },
+      { "size": "CM 27.5", "available": true },
+      { "size": "CM 28", "available": true },
+      { "size": "CM 28.5", "available": true },
+      { "size": "CM 29", "available": true }
+    ],
+    "description": "Los Adidas Forum Low son una reinterpretación moderna del clásico zapato de básquetbol de los 80. Con su diseño retro distintivo y construcción premium, estos tenis ofrecen estilo urbano con comodidad moderna.",
+    "details": {
+      "sustainable": true,
+      "sustainableDescription": "Este producto está fabricado con al menos 50% de materiales reciclados como parte del compromiso de adidas con el medio ambiente.",
+      "style": "GY5791",
+      "origin": "Vietnam, Indonesia",
+      "colorShown": "Blanco/Verde/Gum"
+    },
+    "features": [
+      "Diseño retro inspirado en el básquetbol de los 80",
+      "Correa de tobillo con velcro ajustable",
+      "Parte superior de cuero sintético premium",
+      "Suela de goma con patrón de tracción",
+      "Plantilla OrthoLite para comodidad",
+      "Construcción duradera para uso diario"
+    ],
+    "specifications": {
+      "material": "Cuero sintético y materiales reciclados",
+      "sole": "Goma con patrón de tracción",
+      "weight": "Aproximadamente 380g (talla 9 US)",
+      "technology": "OrthoLite"
+    },
+    "care": [
+      "Limpiar con un paño húmedo",
+      "Usar limpiadores suaves",
+      "Secar al aire libre",
+      "Evitar lavadora y secadora",
+      "Guardar en lugar fresco y seco"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "freeShippingThreshold": 50,
+      "returnPeriod": 30,
+      "estimatedDelivery": "3-7 días laborables"
+    },
+    "reviews": {
+      "count": 134,
+      "average": 4.4,
+      "breakdown": {
+        "5": 76,
+        "4": 38,
+        "3": 15,
+        "2": 3,
+        "1": 2
+      }
+    }
   },
   {
     "id": 3,
     "name": "Air Jordan 1 Mid",
     "price": 1800,
-    "feature":5,
-    "image": "src/assets/images/Tenis/air-jordan-1-mid.png"
+    "feature": 5,
+    "category": "Nuevo",
+    "image": "src/assets/images/Tenis/air-jordan-1-mid.png",
+    "images": [
+      "src/assets/images/Tenis/air-jordan-1-mid.png",
+      "src/assets/images/Tenis/air-jordan-1-mid.png",
+      "src/assets/images/Tenis/air-jordan-1-mid.png",
+      "src/assets/images/Tenis/air-jordan-1-mid.png"
+    ],
+    "colors": [
+      {
+        "name": "Chicago/Rojo",
+        "image": "src/assets/images/Tenis/air-jordan-1-mid.png",
+        "code": "100"
+      },
+      {
+        "name": "Bred/Negro",
+        "image": "src/assets/images/Tenis/air-jordan-1-mid.png",
+        "code": "001"
+      },
+      {
+        "name": "Royal/Azul",
+        "image": "src/assets/images/Tenis/air-jordan-1-mid.png",
+        "code": "400"
+      }
+    ],
+    "sizes": [
+      { "size": "CM 24 (US 6)", "available": false },
+      { "size": "CM 25", "available": true },
+      { "size": "CM 25.5", "available": true },
+      { "size": "CM 26", "available": true },
+      { "size": "CM 26.5", "available": true },
+      { "size": "CM 27", "available": true },
+      { "size": "CM 27.5", "available": true },
+      { "size": "CM 28", "available": true },
+      { "size": "CM 28.5", "available": false },
+      { "size": "CM 29", "available": true }
+    ],
+    "description": "El Air Jordan 1 Mid rinde homenaje a la silueta original que lo cambió todo. Con elementos de diseño icónicos que se mantienen fieles al original, este zapato de corte medio ofrece comodidad y estilo versátil para todos los días.",
+    "details": {
+      "sustainable": false,
+      "sustainableDescription": null,
+      "style": "554724-066",
+      "origin": "China, Vietnam",
+      "colorShown": "Chicago/Rojo/Blanco/Negro"
+    },
+    "features": [
+      "Silueta icónica del Air Jordan 1",
+      "Diseño de corte medio para versatilidad",
+      "Amortiguación Air-Sole en el talón",
+      "Construcción premium con cuero",
+      "Logo Wings bordado",
+      "Suela de goma con patrón de tracción"
+    ],
+    "specifications": {
+      "material": "Cuero, cuero sintético y textil",
+      "sole": "Goma con Air-Sole",
+      "weight": "Aproximadamente 410g (talla 9 US)",
+      "technology": "Air-Sole"
+    },
+    "care": [
+      "Limpiar con un paño húmedo",
+      "Usar productos específicos para cuero",
+      "Secar al aire libre",
+      "Evitar exposición directa al sol",
+      "Almacenar en lugar seco"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "freeShippingThreshold": 50,
+      "returnPeriod": 60,
+      "estimatedDelivery": "2-5 días laborables"
+    },
+    "reviews": {
+      "count": 203,
+      "average": 4.7,
+      "breakdown": {
+        "5": 142,
+        "4": 41,
+        "3": 15,
+        "2": 3,
+        "1": 2
+      }
+    }
   },
   {
     "id": 4,
     "name": "Reebok Classic",
     "price": 1700,
-    
-    "image": "src/assets/images/Tenis/reebok-classic-n.jpeg"
+    "category": "Nuevo",
+    "image": "src/assets/images/Tenis/reebok-classic-n.jpeg",
+    "images": [
+      "src/assets/images/Tenis/reebok-classic-n.jpeg",
+      "src/assets/images/Tenis/reebok-classic-n.jpeg",
+      "src/assets/images/Tenis/reebok-classic-n.jpeg",
+      "src/assets/images/Tenis/reebok-classic-n.jpeg"
+    ],
+    "colors": [
+      {
+        "name": "Blanco/Blanco",
+        "image": "src/assets/images/Tenis/reebok-classic-n.jpeg",
+        "code": "100"
+      },
+      {
+        "name": "Negro/Negro",
+        "image": "src/assets/images/Tenis/reebok-classic-n.jpeg",
+        "code": "001"
+      },
+      {
+        "name": "Gris/Blanco",
+        "image": "src/assets/images/Tenis/reebok-classic-n.jpeg",
+        "code": "050"
+      }
+    ],
+    "sizes": [
+      { "size": "CM 24.5", "available": true },
+      { "size": "CM 25", "available": true },
+      { "size": "CM 25.5", "available": true },
+      { "size": "CM 26", "available": true },
+      { "size": "CM 26.5", "available": true },
+      { "size": "CM 27", "available": true },
+      { "size": "CM 27.5", "available": true },
+      { "size": "CM 28", "available": true },
+      { "size": "CM 28.5", "available": false },
+      { "size": "CM 29", "available": true }
+    ],
+    "description": "El Reebok Classic Leather es un ícono del calzado deportivo que ha perdurado a través de las décadas. Con su diseño minimalista y construcción de cuero premium, ofrece comodidad y estilo atemporal para cualquier ocasión.",
+    "details": {
+      "sustainable": false,
+      "sustainableDescription": null,
+      "style": "2214",
+      "origin": "Indonesia",
+      "colorShown": "Blanco/Blanco"
+    },
+    "features": [
+      "Diseño minimalista y atemporal",
+      "Construcción de cuero suave y premium",
+      "Plantilla acolchada para comodidad",
+      "Suela de goma duradera",
+      "Forro textil transpirable",
+      "Silueta de perfil bajo"
+    ],
+    "specifications": {
+      "material": "Cuero premium y textil",
+      "sole": "Goma",
+      "weight": "Aproximadamente 320g (talla 9 US)",
+      "technology": "Plantilla acolchada"
+    },
+    "care": [
+      "Limpiar con un paño húmedo",
+      "Usar acondicionador de cuero ocasionalmente",
+      "Secar al aire libre",
+      "Evitar agua en exceso",
+      "Guardar en lugar ventilado"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "freeShippingThreshold": 50,
+      "returnPeriod": 30,
+      "estimatedDelivery": "3-7 días laborables"
+    },
+    "reviews": {
+      "count": 89,
+      "average": 4.3,
+      "breakdown": {
+        "5": 51,
+        "4": 25,
+        "3": 10,
+        "2": 2,
+        "1": 1
+      }
+    }
   },
   {
     "id": 5,
     "name": "New Balance 574",
     "price": 1600,
-    
-    "image": "src/assets/images/Tenis/New_balance_574.webp"
+    "category": "Nuevo",
+    "image": "src/assets/images/Tenis/New_balance_574.webp",
+    "images": [
+      "src/assets/images/Tenis/New_balance_574.webp",
+      "src/assets/images/Tenis/New_balance_574.webp",
+      "src/assets/images/Tenis/New_balance_574.webp",
+      "src/assets/images/Tenis/New_balance_574.webp"
+    ],
+    "colors": [
+      {
+        "name": "Gris/Azul",
+        "image": "src/assets/images/Tenis/New_balance_574.webp",
+        "code": "EGG"
+      },
+      {
+        "name": "Azul Marino/Gris",
+        "image": "src/assets/images/Tenis/New_balance_574.webp",
+        "code": "EGN"
+      },
+      {
+        "name": "Borgoña/Gris",
+        "image": "src/assets/images/Tenis/New_balance_574.webp",
+        "code": "EGB"
+      }
+    ],
+    "sizes": [
+      { "size": "CM 24", "available": true },
+      { "size": "CM 25", "available": true },
+      { "size": "CM 25.5", "available": true },
+      { "size": "CM 26", "available": true },
+      { "size": "CM 26.5", "available": true },
+      { "size": "CM 27", "available": true },
+      { "size": "CM 27.5", "available": true },
+      { "size": "CM 28", "available": true },
+      { "size": "CM 28.5", "available": true },
+      { "size": "CM 29", "available": true }
+    ],
+    "description": "El New Balance 574 es un clásico running shoe que combina heritage y modernidad. Con su silueta icónica y construcción cómoda, es perfecto para el uso diario y ofrece el equilibrio perfecto entre estilo y funcionalidad.",
+    "details": {
+      "sustainable": true,
+      "sustainableDescription": "Fabricado con materiales reciclados en la plantilla y algunos componentes de la parte superior.",
+      "style": "ML574EGG",
+      "origin": "Vietnam",
+      "colorShown": "Gris/Azul"
+    },
+    "features": [
+      "Silueta icónica y atemporal",
+      "Construcción de gamuza y malla",
+      "Amortiguación ENCAP para comodidad",
+      "Suela de goma con tracción",
+      "Plantilla acolchada",
+      "Diseño versátil para uso diario"
+    ],
+    "specifications": {
+      "material": "Gamuza, malla y materiales sintéticos",
+      "sole": "Goma con tecnología ENCAP",
+      "weight": "Aproximadamente 340g (talla 9 US)",
+      "technology": "ENCAP"
+    },
+    "care": [
+      "Limpiar con cepillo suave",
+      "Usar productos específicos para gamuza",
+      "Secar al aire libre",
+      "Evitar agua directa",
+      "Almacenar en lugar seco"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "freeShippingThreshold": 50,
+      "returnPeriod": 30,
+      "estimatedDelivery": "3-7 días laborables"
+    },
+    "reviews": {
+      "count": 167,
+      "average": 4.5,
+      "breakdown": {
+        "5": 94,
+        "4": 48,
+        "3": 20,
+        "2": 3,
+        "1": 2
+      }
+    }
   },
   {
     "id": 6,
     "name": "Converse Chuck Taylor",
     "price": 1500,
-    
-    "image": "src/assets/images/Tenis/converse_chuck_taylor_White.webp"
+    "category": "Nuevo",
+    "image": "src/assets/images/Tenis/converse_chuck_taylor_White.webp",
+    "images": [
+      "src/assets/images/Tenis/converse_chuck_taylor_White.webp",
+      "src/assets/images/Tenis/converse_chuck_taylor_White.webp",
+      "src/assets/images/Tenis/converse_chuck_taylor_White.webp",
+      "src/assets/images/Tenis/converse_chuck_taylor_White.webp"
+    ],
+    "colors": [
+      {
+        "name": "Blanco/Blanco",
+        "image": "src/assets/images/Tenis/converse_chuck_taylor_White.webp",
+        "code": "100"
+      },
+      {
+        "name": "Negro/Negro",
+        "image": "src/assets/images/Tenis/converse_chuck_taylor_White.webp",
+        "code": "001"
+      },
+      {
+        "name": "Rojo/Rojo",
+        "image": "src/assets/images/Tenis/converse_chuck_taylor_White.webp",
+        "code": "600"
+      }
+    ],
+    "sizes": [
+      { "size": "CM 24", "available": true },
+      { "size": "CM 25", "available": true },
+      { "size": "CM 25.5", "available": true },
+      { "size": "CM 26", "available": true },
+      { "size": "CM 26.5", "available": true },
+      { "size": "CM 27", "available": true },
+      { "size": "CM 27.5", "available": true },
+      { "size": "CM 28", "available": true },
+      { "size": "CM 28.5", "available": true },
+      { "size": "CM 29", "available": false }
+    ],
+    "description": "El Converse Chuck Taylor All Star es el zapato más icónico de todos los tiempos. Con su diseño clásico y construcción de lona, ha sido un símbolo de autenticidad y expresión personal durante generaciones.",
+    "details": {
+      "sustainable": false,
+      "sustainableDescription": null,
+      "style": "M7652C",
+      "origin": "Vietnam",
+      "colorShown": "Blanco/Blanco"
+    },
+    "features": [
+      "Diseño icónico y atemporal",
+      "Construcción de lona duradera",
+      "Suela de goma vulcanizada",
+      "Cordones de algodón",
+      "Logo estrella y chevron",
+      "Estilo versátil para cualquier ocasión"
+    ],
+    "specifications": {
+      "material": "Lona 100% algodón",
+      "sole": "Goma vulcanizada",
+      "weight": "Aproximadamente 280g (talla 9 US)",
+      "technology": "Vulcanización tradicional"
+    },
+    "care": [
+      "Lavar a máquina en agua fría",
+      "Usar detergente suave",
+      "Secar al aire libre",
+      "No usar blanqueador",
+      "Guardar en lugar seco"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "freeShippingThreshold": 50,
+      "returnPeriod": 30,
+      "estimatedDelivery": "2-5 días laborables"
+    },
+    "reviews": {
+      "count": 298,
+      "average": 4.2,
+      "breakdown": {
+        "5": 156,
+        "4": 89,
+        "3": 35,
+        "2": 12,
+        "1": 6
+      }
+    }
   },
   {
     "id": 7,
     "name": "Vans Old Skool",
     "price": 1400,
-    "feature":4,
-    "image": "src/assets/images/Tenis/Vans-Old-Skool.webp"
-  },
-  {
-    "id":8
+    "feature": 4,
+    "category": "Nuevo",
+    "image": "src/assets/images/Tenis/Vans-Old-Skool.webp",
+    "images": [
+      "src/assets/images/Tenis/Vans-Old-Skool.webp",
+      "src/assets/images/Tenis/Vans-Old-Skool.webp",
+      "src/assets/images/Tenis/Vans-Old-Skool.webp",
+      "src/assets/images/Tenis/Vans-Old-Skool.webp"
+    ],
+    "colors": [
+      {
+        "name": "Negro/Blanco",
+        "image": "src/assets/images/Tenis/Vans-Old-Skool.webp",
+        "code": "001"
+      },
+      {
+        "name": "Azul Marino/Blanco",
+        "image": "src/assets/images/Tenis/Vans-Old-Skool.webp",
+        "code": "400"
+      },
+      {
+        "name": "Rojo/Blanco",
+        "image": "src/assets/images/Tenis/Vans-Old-Skool.webp",
+        "code": "600"
+      }
+    ],
+    "sizes": [
+      { "size": "CM 24", "available": true },
+      { "size": "CM 25", "available": true },
+      { "size": "CM 25.5", "available": true },
+      { "size": "CM 26", "available": true },
+      { "size": "CM 26.5", "available": true },
+      { "size": "CM 27", "available": true },
+      { "size": "CM 27.5", "available": true },
+      { "size": "CM 28", "available": true },
+      { "size": "CM 28.5", "available": false },
+      { "size": "CM 29", "available": true }
+    ],
+    "description": "El Vans Old Skool es el zapato de skate original con el icónico sidestripe. Construido con una parte superior de lona y gamuza resistente, este zapato de perfil bajo ofrece la durabilidad y grip que necesitas.",
+    "details": {
+      "sustainable": false,
+      "sustainableDescription": null,
+      "style": "VN000D3HY28",
+      "origin": "China, Vietnam",
+      "colorShown": "Negro/Blanco"
+    },
+    "features": [
+      "Icónico sidestripe de Vans",
+      "Construcción de lona y gamuza",
+      "Suela waffle original para grip",
+      "Collar acolchado para comodidad",
+      "Refuerzos en áreas de alto desgaste",
+      "Perfecto para skate y uso casual"
+    ],
+    "specifications": {
+      "material": "Lona, gamuza y materiales sintéticos",
+      "sole": "Goma con patrón waffle",
+      "weight": "Aproximadamente 350g (talla 9 US)",
+      "technology": "Waffle outsole"
+    },
+    "care": [
+      "Limpiar con cepillo suave",
+      "Usar productos específicos para gamuza",
+      "Secar al aire libre",
+      "Evitar lavadora",
+      "Guardar en lugar ventilado"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "freeShippingThreshold": 50,
+      "returnPeriod": 30,
+      "estimatedDelivery": "2-5 días laborables"
+    },
+    "reviews": {
+      "count": 187,
+      "average": 4.4,
+      "breakdown": {
+        "5": 98,
+        "4": 62,
+        "3": 21,
+        "2": 4,
+        "1": 2
+      }
+    }
   }
 ]

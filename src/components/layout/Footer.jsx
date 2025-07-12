@@ -4,15 +4,15 @@ import '/src/styles/components/layout/Nav-foot.css';
 export default function Footer() {
   return (
     <footer className="footer">
-      <div class="gp1">
-        <div class="box_image">
+      <div className="gp1">
+        <div className="box_image">
           <figure>
             <a href="#">
               <img src="/src/assets/images/Logos/logo1-2.png" alt="Logo de Eevo SNEAKERS" />
             </a>
           </figure>
         </div>
-        <div class="box_about">
+        <div className="box_about">
           <h2>Sobre nosotros</h2>
           <p>
             Somos alumnos de la Universidad del Caribe realizando una práctica
@@ -24,15 +24,15 @@ export default function Footer() {
             nuestras ces y trabajar en equipo para llevar a cabo este
             proyecto de manera exitosa.
           </p>
-          <div class="politicas">
+          <div className="politicas">
             <a href="#">Política de Privacidad</a>
             <a href="#">Términos de Servicio</a>
           </div>
         </div>
 
-        <div class="box_follow">
+        <div className="box_follow">
           <h2>Siguenos</h2>
-          <div class="social-icons">
+          <div className="social-icons">
             <a href="#"><i className="fa-brands fa-instagram"></i></a>
             <a href="#"><i className="fa-brands fa-facebook"></i></a>
             <a href="#"><i className="fa-brands fa-x-twitter"></i></a>
@@ -40,7 +40,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div class="gp2">
+      <div className="gp2">
         <small> 
           &copy; 2025 <b>EEVO SNEAKERS</b> <br></br>- Todos los derechos reservados.
           Esta pagina fue realiza por <b>Orbelin Jimenez Vazquez</b> -

@@ -1,15 +1,49 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useCart } from '/src/context/CartContext';
 import '/src/styles/products/ProductCard.css';
 
-const ProductCard = ({ id, name, price, image, category, colors = ['Negro', 'Blanco', 'Rojo'], sizes = ['38', '39', '40', '41', '42'] }) => {
-  const [selectedColor, setSelectedColor] = useState(colors[0]);
-  const [selectedSize, setSelectedSize] = useState(sizes[0]);
+const ProductCard = ({
+  id,
+  name,
+  price,
+  image,
+  category,
+  colors = ['Negro', 'Blanco', 'Rojo'],
+  sizes = ['38', '39', '40', '41', '42']
+}) => {
+  const { addToCart } = useCart(); // Obtener la función addToCart del contexto
+
+  const [selectedSize, setSelectedSize] = useState(
+    typeof sizes[0] === 'string' ? sizes[0] : sizes[0]?.size || ''
+  );
   const [isHovered, setIsHovered] = useState(false);
+  const [isAdding, setIsAdding] = useState(false); // Estado para mostrar feedback
 
   const handleAddToCart = () => {
-    // Lógica para agregar al carrito
-    console.log(`Agregado al carrito: ${name}, Talla: ${selectedSize}, Color: ${selectedColor}`);
+    setIsAdding(true);
+    
+    // Crear el objeto del producto con las selecciones
+    const productToAdd = {
+      id: `${id}-${selectedSize}`, // ID único para cada variante
+      originalId: id, // ID original del producto
+      name,
+      price,
+      image,
+      category,
+      size: selectedSize,
+      quantity: 1
+    };
+
+    // Agregar al carrito
+    addToCart(productToAdd);
+    
+    // Feedback visual
+    setTimeout(() => {
+      setIsAdding(false);
+    }, 500);
+    
+    console.log(`Agregado al carrito: ${name}, Talla: ${selectedSize}`);
   };
 
   return (
@@ -18,82 +52,57 @@ const ProductCard = ({ id, name, price, image, category, colors = ['Negro', 'Bla
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="product-image-container">
-        <Link to={`/product/${id}`} className="product-link">
+      <div className="product-image">
+        <Link to={`/product/${id}`}>
           <img 
-            src={image} 
-            alt={name} 
-            className="product-image"
-            loading="lazy"
+            src={image}
+            alt={name}
+            className="product-img"
           />
         </Link>
-        <span className="product-category">{category}</span>
-        
-        {/* Controles de color (solo visible en hover) */}
-        {isHovered && (
-          <div className="color-selector">
-            {colors.map(color => (
-              <button
-                key={color}
-                className={`color-option ${selectedColor === color ? 'active' : ''}`}
-                style={{ backgroundColor: getColorHex(color) }}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setSelectedColor(color);
-                }}
-                aria-label={`Color ${color}`}
-              />
-            ))}
-          </div>
-        )}
+        <div className="product-category">
+          {category}
+        </div>
       </div>
 
       <div className="product-info">
-        <Link to={`/product/${id}`} className="product-link">
+        <Link to={`/product/${id}`}>
           <h3 className="product-name">{name}</h3>
-          <p className="product-price">${price.toFixed(2)}</p>
         </Link>
+        <p className="product-price">${price.toFixed(2)}</p>
 
         {/* Selector de tallas */}
         <div className="size-selector">
-          {sizes.map(size => (
-            <button
-              key={size}
-              className={`size-option ${selectedSize === size ? 'active' : ''}`}
-              onClick={() => setSelectedSize(size)}
-            >
-              {size}
-            </button>
-          ))}
+          {sizes.map((size, index) => {
+            const sizeValue = typeof size === 'string' ? size : size.size;
+            const isAvailable = typeof size === 'string' ? true : size.available !== false;
+                        
+            return (
+              <button
+                key={`size-${index}-${sizeValue}`}
+                className={`size-option ${selectedSize === sizeValue ? 'selected' : ''} ${!isAvailable ? 'disabled' : ''}`}
+                onClick={() => isAvailable && setSelectedSize(sizeValue)}
+                disabled={!isAvailable}
+              >
+                {sizeValue}
+              </button>
+            );
+          })}
         </div>
 
         {/* Botón agregar al carrito */}
-        <button 
-          className="add-to-cart-btn"
-          onClick={handleAddToCart}
-        >
-          <i className="fas fa-shopping-cart"></i> Agregar
-        </button>
+        <div className="conten-btn">
+          <button 
+            className={`add-to-cart-btn ${isAdding ? 'adding' : ''}`}
+            onClick={handleAddToCart}
+            disabled={isAdding}
+          >
+            {isAdding ? 'Agregando...' : 'Agregar'}
+          </button>
+        </div>
       </div>
     </div>
   );
 };
-
-// Función auxiliar para convertir nombres de colores a valores HEX
-function getColorHex(colorName) {
-  const colors = {
-    'Negro': '#000000',
-    'Blanco': '#FFFFFF',
-    'Rojo': '#FF0000',
-    'Azul': '#0000FF',
-    'Verde': '#00FF00',
-    'Amarillo': '#FFFF00',
-    'Gris': '#808080',
-    'Rosa': '#FFC0CB',
-    'Morado': '#800080',
-    'Naranja': '#FFA500'
-  };
-  return colors[colorName] || '#CCCCCC';
-}
 
 export default ProductCard;

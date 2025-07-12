@@ -10,6 +10,22 @@ const testimonials = [
     rating: 5,
     avatar: 'src/assets/images/carlos.jpeg'
   },
+  {
+    id:2,
+    name: 'Juan C. Lopez',
+    role: 'Atleta',
+    text:'Hay una excelente variedad de opciones a escojer',
+    rating: 4,
+    avatar: "src/assets/images/juan.webp"
+  },
+  {
+    id:3,
+    name:'Liliana M. Rodriguez',
+    role:'Madre',
+    text:'Satisfecha con la compra, envio rapido y seguro',
+    rating:5,
+    avatar:'src/assets/images/lili.jpeg'
+  },
   // Agrega más testimonios...
 ];
 
